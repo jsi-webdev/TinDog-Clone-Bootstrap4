@@ -1,37 +1,49 @@
 body {
   font-family: "Montserrat";
   font-weight: 400;
+  text-align: center;
 }
 
-h1 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Montserrat";
   font-weight: 900;
-  font-size: 3.5rem;
-  line-height: 1.5;
-}
-
-h2 {
-  font-size: 3rem;
-  font-weight: bold;
-  line-height: 1.5;
-}
-
-h3 {
-  font-weight: bold;
-  font-size: 1.5rem;
 }
 
 p {
   color: gray;
 }
 
+/* Container section */
+
 .container-fluid {
-  background-color: #ff4c68;
-  padding: 3% 15%;
+  padding: 7% 15%;
 }
 
-#title {
+/* section */
+.colored-section {
+  background-color: #ff4c68;
   color: #fff;
+}
+
+.white-section {
+  background-color: #fff;
+}
+
+/* Header seaction */
+
+.big-heading {
+  font-size: 3.5rem;
+  line-height: 1.5;
+}
+
+.section-heading {
+  font-size: 3rem;
+  line-height: 1.5;
 }
 
 /* Navigation Bar */
@@ -42,7 +54,7 @@ p {
 .navbar-brand {
   font-family: "Ubuntu";
   font-size: 2.5rem;
-  font-weight: bold;
+  font-weight: 900;
 }
 
 .nav-item {
@@ -55,6 +67,12 @@ p {
   font-size: 1.2rem;
 }
 
+/* Title section */
+#title .container-fluid {
+  padding: 3% 15% 7%;
+  text-align: left;
+}
+
 /* Download Button */
 .download-btn {
   margin: 5% 3% 5% 0;
@@ -64,16 +82,18 @@ p {
 .title-img {
   width: 60%;
   transform: rotate(25deg);
+  position: absolute;
+  right: 30%;
 }
 
 /* Feature Section */
 #features {
-  padding: 7% 15%;
+  position: relative;
+  z-index: 1;
 }
 
 .feature-box {
   padding: 5%;
-  text-align: center;
 }
 
 .feature-icon {
@@ -85,11 +105,14 @@ p {
   color: #ff4c68;
 }
 
+.feature-title {
+  font-size: 1.5rem;
+}
+
 /* Testimonals Section */
 #testimonials {
-  background-color: #ff4c68;
+  background-color: #ef8172;
   color: #fff;
-  text-align: center;
 }
 
 .testimonial-img {
@@ -98,14 +121,14 @@ p {
   width: 10%;
 }
 
-.carousel-item {
-  padding: 7% 15%;
+.testimonial-text {
+  font-size: 3rem;
+  line-height: 1.5;
 }
 
 /* Press section */
 #press {
-  background-color: #ff4c68;
-  text-align: center;
+  background-color: #ef8172;
   padding-bottom: 3%;
 }
 
@@ -121,5 +144,28 @@ p {
 
 .pricing-card {
   padding: 3% 2%;
-  text-align: center;
+}
+
+.price-text {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+/* Call to Action */
+
+/* footer */
+.footer-icon {
+  padding: 3% 1%;
+}
+
+/* Media Quary */
+@media (max-width: 1125px) {
+  #title {
+    text-align: center;
+  }
+
+  .title-img {
+    position: static;
+    transform: rotate(0);
+  }
 }
